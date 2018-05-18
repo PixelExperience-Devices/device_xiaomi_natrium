@@ -25,5 +25,5 @@ $(call inherit-product, device/xiaomi/natrium/device.mk)
 PRODUCT_NAME := full_natrium
 PRODUCT_DEVICE := natrium
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 5s Plus
+PRODUCT_MODEL := Mi 5s Plus
 PRODUCT_MANUFACTURER := Xiaomi
