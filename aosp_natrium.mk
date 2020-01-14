@@ -21,14 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from natrium device
 $(call inherit-product, device/xiaomi/natrium/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+
+#GApps
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_natrium
+PRODUCT_NAME := aosp_natrium
 PRODUCT_DEVICE := natrium
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 5s Plus
+PRODUCT_MODEL := Mi 5s Plus
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
