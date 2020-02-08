@@ -36,6 +36,8 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     GCam
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/org.codeaurora.snapcam.xml:system/etc/permissions/org.codeaurora.snapcam.xml
 
 # Consumer IR
 PRODUCT_PACKAGES += \
